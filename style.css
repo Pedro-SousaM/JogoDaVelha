@@ -102,7 +102,7 @@ body {
     color: white;
     height: 30vh;
     width: 75vw;
-    max-width: 440px;
+    max-width: 360px;
     border: #eba063 3px solid;
     border-radius: 10px;
     text-align: center;
@@ -139,11 +139,13 @@ span {
 }
 
 .winposition {
-    left: 37vw;
+    left: calc(50% - (360px / 2));
 }
 
 .winposition2 {
-    left: 45vw;
+    left: calc(50% - (177px / 2.5));
+
+
 }
 
 #none {
@@ -165,30 +167,14 @@ span {
         user-select: none;
     }
 
-    .winposition {
-        left: 21vw;
-    }
-
-    .winposition2 {
-        left: 41vw;
-    }
 
 }
 
-@media screen and (max-height:650px) {
-    .ball {
-        width: 117%;
-        user-select: none;
+@media screen and (max-width: 480px) {
+    .wincard {
+        left: calc(50% - (37.5vw/2));
+        transform: translate(-37.5vw/2, 0);
     }
-
-    .winposition {
-        left: 31vw;
-    }
-
-    .winposition2 {
-        left: 46vw;
-    }
-
 }
 
 @media screen and (max-width:440px) {
@@ -202,14 +188,6 @@ span {
         height: 70%;
         width: 130px;
         top: -7vh;
-    }
-
-    .winposition {
-        left: 11vw;
-    }
-
-    .winposition2 {
-        left: 32vw;
     }
 
 }
