@@ -1,3 +1,6 @@
+*{
+    outline: green 2px solid;
+}
 body {
     display: flex;
     align-items: center;
@@ -173,20 +176,17 @@ span {
 @media screen and (max-width: 480px) {
     .winposition {
         left: calc(50% - (37.5vw));
-    }
-}
-
-@media screen and (max-width:440px) {
-    .ball {
-        width: 117%;
-        user-select: none;
-    }
-
-    .square {
+    } 
+    .retangle {
+        width: 100vw; 
+        position: relative; 
+        left: -10vw;
+    } 
+    .square{
         margin-inline: 2%;
-        height: 70%;
+        height: 60%;
         width: 130px;
         top: -7vh;
     }
-
 }
+
