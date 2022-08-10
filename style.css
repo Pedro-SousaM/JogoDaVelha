@@ -171,9 +171,8 @@ span {
 }
 
 @media screen and (max-width: 480px) {
-    .wincard {
-        left: calc(50% - (37.5vw/2));
-        transform: translate(-37.5vw/2, 0);
+    .winposition {
+        left: calc(50% - (37.5vw));
     }
 }
 
